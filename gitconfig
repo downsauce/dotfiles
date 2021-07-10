@@ -1,13 +1,15 @@
 [user]
-	name = Matt Heindel
-  email = mheindel94@gmail.com
+	name = Zadok Kim
+	email = zadokjhkim@gmail.com
 [core]
-  editor = vim
-  autocrlf = input
-  safecrlf = true
+	editor = vim
+	autocrlf = input
+	safecrlf = true
 [alias]
-  type = cat-file -t
-  dump = cat-file -p
-[credential]
-	helper = store
-
+	  co = checkout
+	  ci = commit
+	  st = status
+	  br = branch
+	  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+          type = cat-file -t
+          dump = cat-file -p

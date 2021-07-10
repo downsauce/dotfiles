@@ -1,4 +1,3 @@
-
 # notify user that aliases were loaded
 echo "executed ~/.bash_aliases"
 echo
@@ -12,7 +11,7 @@ alias la='l -A'  # list all files including hidden
 cl() { cd "$@" && l; } # change directory and list files in custom format
 
 # git commands
-alias gml='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short --author="Matt Heindel"'
+alias gml='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short --author="Zadok Kim"'
 alias gl='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 alias gs='git status'
 alias ga='git add'
@@ -26,14 +25,12 @@ alias open='explorer.exe'
 alias pom='curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash'
 
 # navigation
-alias hr='cl ~/HackReactor' 
-alias toy='cd ~/HackReactor/hr-rfp54-toy-problems'
+alias hr='cl ~/hackreactor' 
+alias toy='cd ~/hackreactor/hr-rfp54-toy-problems'
 
 # navigate to pull request for submitting toy problem
-alias submit='open https://github.com/hackreactor/hr-rfp54-toy-problems/compare/matt-heindel...matt-heindel:master'
+alias submit='open https://github.com/hackreactor/hr-rfp54-toy-problems/compare/downsauce...downsauce:master'
 
 # managing server ports
 lport() { lsof -t -i:"$@"; } # list processes on specified port number
 killport() { kill -9 $(lsof -t -i:"$@"); } # kill process on specified port number
-
-
