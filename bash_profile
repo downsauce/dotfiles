@@ -3,3 +3,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
