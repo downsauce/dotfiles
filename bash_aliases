@@ -21,6 +21,13 @@ alias gp='git push origin master'
 # launch file explorer / default browser
 alias open='explorer.exe'
 
+# mysql commands 
+mysql-run() {
+  sudo service mysql start
+  sudo service mysql status
+  mysql -u root -p
+}
+
 # install pomander for ESLint pre-commit linting
 alias pom='curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash'
 
